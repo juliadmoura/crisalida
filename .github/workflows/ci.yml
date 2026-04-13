@@ -7,6 +7,7 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -15,8 +16,8 @@ jobs:
           node-version: 22
           cache: 'npm'
 
-      - run: npm ci
+      - name: Instalar dependências
+        run: npm install
 
-      - run: npm run lint
-
-      - run: npm run test:ci
+      - name: Rodar testes
+        run: npm run test:ci

@@ -5,8 +5,8 @@
       "apps/*",
       "packages/*"
     ],
-    "scripts": {
-  "lint": "eslint \"apps/mobile/**/*.{ts,tsx}\" --ignore-path .gitignore",
+   "scripts": {
+  "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --no-eslintrc --rule '{}'",
   "test": "jest --passWithNoTests",
   "test:ci": "jest --ci --coverage --passWithNoTests"
 },
