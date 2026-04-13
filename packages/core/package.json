@@ -4,6 +4,14 @@
     "private": true,
     "main": "src/index.ts",
     "scripts": {
-      "test": "jest"
+        "test": "jest"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "ts-jest": "^29.4.9"
     }
-  }
+}
