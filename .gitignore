@@ -1,0 +1,13 @@
+@"
+node_modules/
+.bundle/
+*.keystore
+*.jks
+.env
+.env.local
+apps/mobile/android/.gradle
+apps/mobile/android/app/build
+apps/mobile/ios/build
+apps/mobile/ios/Pods
+coverage/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
