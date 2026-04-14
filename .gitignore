@@ -9,5 +9,6 @@ apps/mobile/android/.gradle
 apps/mobile/android/app/build
 apps/mobile/ios/build
 apps/mobile/ios/Pods
+apps/mobile/android/app/google-services.json
 coverage/
 "@ | Out-File -FilePath .gitignore -Encoding utf8
