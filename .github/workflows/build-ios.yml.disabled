@@ -1,0 +1,35 @@
+# name: Build iOS
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   ios:
+#     name: Gerar build iOS
+#     runs-on: macos-14    ← macOS com Apple Silicon
+
+#     steps:
+#       - uses: actions/checkout@v4
+
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 20
+#           cache: 'npm'
+
+#       - name: Instalar dependências Node
+#         run: npm ci
+
+#       - name: Instalar CocoaPods
+#         working-directory: apps/mobile/ios
+#         run: pod install
+
+#       - name: Build iOS (simulador)
+#         working-directory: apps/mobile/ios
+#         run: |
+#           xcodebuild \
+#             -workspace Crisalida.xcworkspace \
+#             -scheme Crisalida \
+#             -sdk iphonesimulator \
+#             -configuration Debug \
+#             build
